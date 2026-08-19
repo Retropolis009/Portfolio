@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Roblox Developer Portfolio | Luau & Systems Scripting</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Blue/Purple LED Grid Background Canvas -->
+  <canvas id="bg-canvas"></canvas>
+
+  <!-- Glassmorphism Navigation -->
+  <header class="nav-wrapper">
+    <nav class="pill-nav">
+      <a href="#home" class="brand">ROBLOX<span>.DEV</span></a>
+      <div class="nav-links">
+        <a href="#about">About</a>
+        <a href="#work" class="active">Work</a>
+        <a href="#contact">Contact</a>
+      </div>
+      <a href="#contact" class="nav-btn">Hire Me</a>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero">
+    <div class="hero-content">
+      <div class="status-badge">
+        <span class="status-dot"></span> Open for Commissions & Game Studios
+      </div>
+
+      <h1 class="hero-title">
+        Roblox Luau &<br>
+        <span class="underline-wrapper">
+          Systems Scripting
+          <svg class="hand-underline" viewBox="0 0 300 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M5 14C80 4 210 2 295 12" stroke="#6366f1" stroke-width="4" stroke-linecap="round"/>
+          </svg>
+        </span>
+      </h1>
+
+      <p class="hero-subtitle">
+        Combat frameworks, custom movement mechanics, raycast hitboxes, and performant server-side game logic built cleanly in Luau.
+      </p>
+
+      <div class="cta-group">
+        <a href="#work" class="btn btn-primary">View My Work</a>
+        <a href="#contact" class="btn btn-secondary">Hire Me</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="container">
+    <h2 class="section-heading">About Me</h2>
+    <div class="about-card">
+      <p>
+        I specialize in modular Luau scripting, system security, and custom gameplay mechanics for Roblox. From physics-based combat frameworks to performant UI controllers, I build scalable server-authoritative codebases tailored for game studios and independent projects.
+      </p>
+    </div>
+  </section>
+
+  <!-- Works Section -->
+  <section id="work" class="container">
+    <h2 class="section-heading">Featured Works</h2>
+
+    <div class="project-list">
+
+      <!-- Project 1: FPS System -->
+      <article class="project-card">
+        <div class="media-container iframe-wrapper">
+          <iframe 
+            src="https://www.youtube-nocookie.com/embed/gf16V2-eoz0?rel=0&modestbranding=1" 
+            title="First Person Shooter System" 
+            frameborder="0" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+            allowfullscreen>
+          </iframe>
+          <span class="card-tag">Physics & Combat</span>
+        </div>
+        <div class="card-details">
+          <h3 class="card-title">First Person Shooter Framework</h3>
+          <p class="card-desc">
+            Complete FPS system featuring weapon switching (handguns, SMGs, shotguns, sniper rifles), procedural recoil, camera kick, dynamic ammo HUD tracking, shell ejection, and ragdoll death physics.
+          </p>
+          <div class="tech-stack">
+            <span class="tech-tag">Luau Strict</span>
+            <span class="tech-tag">Raycasting</span>
+            <span class="tech-tag">Spring Recoil</span>
+            <span class="tech-tag">Sound Cache</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- Project 2: Ability System -->
+      <article class="project-card">
+        <div class="media-container iframe-wrapper">
+          <iframe 
+            src="https://www.youtube-nocookie.com/embed/x1jF0EnYAls?rel=0&modestbranding=1" 
+            title="Ability System & UI Mechanics" 
+            frameborder="0" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+            allowfullscreen>
+          </iframe>
+          <span class="card-tag">UI / Combat Mechanics</span>
+        </div>
+        <div class="card-details">
+          <h3 class="card-title">Ability System & HUD Controllers</h3>
+          <p class="card-desc">
+            Modular character ability pipeline with selection interface, ground slams, aura shields, speed buffs, and real-time HUD updates for health, energy, and hotbar cooldown sweeps.
+          </p>
+          <div class="tech-stack">
+            <span class="tech-tag">Luau Strict</span>
+            <span class="tech-tag">TweenService</span>
+            <span class="tech-tag">OOP Modules</span>
+            <span class="tech-tag">ParticleVFX</span>
+          </div>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="container">
+    <h2 class="section-heading">Get In Touch</h2>
+    <div class="contact-card">
+      <p class="contact-text">Interested in working together or commissioning a custom mechanic? Feel free to reach out directly.</p>
+      <div class="contact-links">
+        <a href="mailto:your-email@example.com" class="btn btn-primary">Send Email</a>
+        <a href="https://github.com" target="_blank" rel="noopener" class="btn btn-secondary">GitHub Profile</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Fixed Scroll Indicator -->
+  <div id="scroll-indicator" class="scroll-indicator">
+    <span class="scroll-text">SCROLL</span>
+    <div class="mouse-icon">
+      <div class="wheel"></div>
+    </div>
+  </div>
+
+  <footer>
+    <p>&copy; 2026 Roblox Scripting Portfolio • Hosted on GitHub Pages</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
