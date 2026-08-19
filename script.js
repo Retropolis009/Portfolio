@@ -1,3 +1,25 @@
+// Discord ID Copy Functionality
+function copyDiscordID() {
+  const discordElement = document.getElementById("discord-id");
+  const copyText = document.getElementById("copy-text");
+
+  if (!discordElement || !copyText) return;
+
+  const discordID = discordElement.innerText;
+
+  navigator.clipboard.writeText(discordID).then(() => {
+    copyText.innerText = "Copied!";
+    setTimeout(() => {
+      copyText.innerText = "Copy ID";
+    }, 2000);
+  }).catch(err => {
+    console.error("Failed to copy Discord ID: ", err);
+  });
+}
+
+// Explicitly bind to window for inline onclick accessibility
+window.copyDiscordID = copyDiscordID;
+
 document.addEventListener('DOMContentLoaded', () => {
   const scrollIndicator = document.getElementById('scroll-indicator');
 
