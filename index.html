@@ -3,212 +3,168 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Roblox Developer Portfolio | Luau & Systems Scripting</title>
+  <meta name="theme-color" content="#05060b">
+  <meta name="description" content="Retropolis builds Roblox gameplay and systems in Luau, with a focus on combat, abilities, AI, and multiplayer-ready features.">
+  <title>Retropolis | Roblox Gameplay &amp; Systems Programmer</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <canvas id="bg-canvas" aria-hidden="true"></canvas>
 
-  <!-- Blue/Purple LED Grid Background Canvas -->
-  <canvas id="bg-canvas"></canvas>
-
-  <!-- Glassmorphism Navigation -->
   <header class="nav-wrapper">
-    <nav class="pill-nav">
+    <nav class="pill-nav" aria-label="Main navigation">
       <a href="#home" class="brand"><span>Retropolis</span></a>
       <div class="nav-links">
+        <a href="#work">Work</a>
+        <a href="#systems">Systems</a>
         <a href="#about">About</a>
-        <a href="#work" class="active">Work</a>
         <a href="#contact">Contact</a>
       </div>
     </nav>
   </header>
 
-  <!-- Hero Section -->
-  <section id="home" class="hero">
-    <div class="hero-content">
-      <div class="status-badge">
-        <span class="status-dot"></span> Open for Commissions & Game Studios
+  <main id="main">
+    <section id="home" class="hero">
+      <div class="hero-content">
+        <p class="eyebrow"><span class="status-dot" aria-hidden="true"></span> Roblox development · Open to long-term work</p>
+        <h1 class="hero-title">Roblox Gameplay<br><span class="title-accent">&amp; Systems Programmer</span></h1>
+        <p class="hero-subtitle">I build gameplay systems in Luau, from responsive combat and abilities to tower-defense logic and vehicle mechanics.</p>
+        <ul class="hero-facts" aria-label="Experience and tools">
+          <li>Around 2 years of Roblox development</li>
+          <li>Luau</li>
+          <li>Roblox Studio</li>
+        </ul>
+        <div class="cta-group">
+          <a href="#work" class="btn btn-primary">Explore selected work <span aria-hidden="true">↓</span></a>
+          <a href="#contact" class="btn btn-secondary">Discuss a project</a>
+        </div>
+      </div>
+      <a class="hero-scroll" href="#work" aria-label="Scroll to selected work"><span></span> SCROLL TO WORK</a>
+    </section>
+
+    <section id="work" class="container section-work">
+      <div class="section-intro">
+        <p class="eyebrow">Selected work</p>
+        <h2 class="section-heading">Systems built to play.</h2>
+        <p class="section-copy">A selection of gameplay systems, with demos and the main technical areas each one explores.</p>
       </div>
 
-      <h1 class="hero-title">
-        Roblox Luau &<br>
-        <span class="underline-wrapper">
-          Systems Scripting
-          <svg class="hand-underline" viewBox="0 0 300 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M5 14C80 4 210 2 295 12" stroke="#6366f1" stroke-width="4" stroke-linecap="round"/>
-          </svg>
-        </span>
-      </h1>
+      <div class="project-list">
+        <article class="project-card">
+          <div class="media-container iframe-wrapper">
+            <iframe src="https://www.youtube.com/embed/gf16V2-eoz0" title="First Person Shooter Framework demo" loading="lazy" referrerpolicy="strict-origin-when-cross-origin" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <span class="card-tag">Combat systems</span>
+          </div>
+          <div class="card-details">
+            <p class="project-index">01 / COMBAT</p>
+            <h3 class="card-title">First Person Shooter Framework</h3>
+            <p class="card-desc">A first-person combat system with weapon switching across handguns, SMGs, shotguns, and sniper rifles. The demo highlights procedural recoil, camera kick, ammo HUD updates, and shell ejection.</p>
+            <div class="tech-stack" aria-label="Technologies and features"><span class="tech-tag">Luau</span><span class="tech-tag">Raycasting</span><span class="tech-tag">Spring recoil</span><span class="tech-tag">Sound cache</span></div>
+            <p class="project-proof"><strong>Focus:</strong> weapon handling, moment-to-moment feedback, and combat presentation.</p>
+          </div>
+        </article>
 
-      <p class="hero-subtitle">
-        Combat frameworks, custom movement mechanics, raycast hitboxes, and performant server-side game logic built cleanly in Luau.
-      </p>
+        <article class="project-card">
+          <div class="media-container iframe-wrapper">
+            <iframe src="https://www.youtube.com/embed/x1jF0EnYAls" title="Ability System and HUD Mechanics demo" loading="lazy" referrerpolicy="strict-origin-when-cross-origin" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <span class="card-tag">Abilities &amp; UI</span>
+          </div>
+          <div class="card-details">
+            <p class="project-index">02 / GAMEPLAY</p>
+            <h3 class="card-title">Ability System &amp; HUD Controllers</h3>
+            <p class="card-desc">A character ability pipeline with a selection interface, ground slams, aura shields, and speed buffs, paired with live health, energy, and hotbar cooldown displays.</p>
+            <div class="tech-stack" aria-label="Technologies and features"><span class="tech-tag">Luau</span><span class="tech-tag">TweenService</span><span class="tech-tag">Module scripts</span><span class="tech-tag">VFX</span></div>
+            <p class="project-proof"><strong>Focus:</strong> connecting ability feedback, cooldown state, and player-facing UI.</p>
+          </div>
+        </article>
 
-      <div class="cta-group">
-        <a href="#work" class="btn btn-primary">View My Work</a>
-        <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+        <article class="project-card">
+          <div class="media-container iframe-wrapper">
+            <iframe src="https://www.youtube.com/embed/8xwSWrxZH60" title="Tower Defense Engine demo" loading="lazy" referrerpolicy="strict-origin-when-cross-origin" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <span class="card-tag">Strategy &amp; AI</span>
+          </div>
+          <div class="card-details">
+            <p class="project-index">03 / AI SYSTEMS</p>
+            <h3 class="card-title">Tower Defense Engine</h3>
+            <p class="card-desc">A tower-defense system covering wave spawning, unit placement, upgrade paths, target prioritization, and server-validated combat.</p>
+            <div class="tech-stack" aria-label="Technologies and features"><span class="tech-tag">Luau</span><span class="tech-tag">Wave handling</span><span class="tech-tag">Placement grid</span><span class="tech-tag">Pathfinding</span></div>
+            <p class="project-proof"><strong>Focus:</strong> coordinating enemy movement, tower targeting, and wave progression.</p>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="media-container iframe-wrapper">
+            <iframe src="https://www.youtube.com/embed/QmRCj5nLpF4" title="Custom Vehicle Mechanics demo" loading="lazy" referrerpolicy="strict-origin-when-cross-origin" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <span class="card-tag">Vehicle physics</span>
+          </div>
+          <div class="card-details">
+            <p class="project-index">04 / PHYSICS</p>
+            <h3 class="card-title">Custom Vehicle Mechanics</h3>
+            <p class="card-desc">A vehicle system with custom suspension, drive logic, speed-scaled steering, camera tracking, and chassis tuning.</p>
+            <div class="tech-stack" aria-label="Technologies and features"><span class="tech-tag">Luau</span><span class="tech-tag">Raycast suspension</span><span class="tech-tag">Chassis physics</span><span class="tech-tag">Camera tracking</span></div>
+            <p class="project-proof"><strong>Focus:</strong> vehicle handling, suspension behavior, and camera response.</p>
+          </div>
+        </article>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- About Section -->
-  <section id="about" class="container">
-    <h2 class="section-heading">About Me</h2>
-    <div class="about-card">
-      <p>
-        Roblox systems and gameplay engineer focused on building high-performance Luau frameworks, custom gameplay mechanics, and intuitive UI controllers. I bridge server-side logic with smooth visual feedback to deliver responsive, scalable player experiences.
-      </p>
-    </div>
-  </section>
-
-  <!-- Works Section -->
-  <section id="work" class="container">
-    <h2 class="section-heading">Featured Works</h2>
-
-    <div class="project-list">
-
-      <!-- Project 1: FPS System -->
-      <article class="project-card">
-        <div class="media-container iframe-wrapper">
-          <iframe 
-            src="https://www.youtube.com/embed/gf16V2-eoz0?enablejsapi=1" 
-            title="First Person Shooter System" 
-            frameborder="0" 
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-            allowfullscreen>
-          </iframe>
-          <span class="card-tag">Physics & Combat</span>
-        </div>
-        <div class="card-details">
-          <h3 class="card-title">First Person Shooter Framework</h3>
-          <p class="card-desc">
-            Complete FPS system featuring weapon switching (handguns, SMGs, shotguns, sniper rifles), procedural recoil, camera kick, dynamic ammo HUD tracking, shell ejection.
-          </p>
-          <div class="tech-stack">
-            <span class="tech-tag">Luau Strict</span>
-            <span class="tech-tag">Raycasting</span>
-            <span class="tech-tag">Spring Recoil</span>
-            <span class="tech-tag">Sound Cache</span>
-          </div>
-        </div>
-      </article>
-
-      <!-- Project 2: Ability System -->
-      <article class="project-card">
-        <div class="media-container iframe-wrapper">
-          <iframe 
-            src="https://www.youtube.com/embed/x1jF0EnYAls?enablejsapi=1" 
-            title="Ability System & UI Mechanics" 
-            frameborder="0" 
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-            allowfullscreen>
-          </iframe>
-          <span class="card-tag">UI / Combat Mechanics</span>
-        </div>
-        <div class="card-details">
-          <h3 class="card-title">Ability System & HUD Controllers</h3>
-          <p class="card-desc">
-            Modular character ability pipeline with selection interface, ground slams, aura shields, speed buffs, and real-time HUD updates for health, energy, and hotbar cooldown sweeps.
-          </p>
-          <div class="tech-stack">
-            <span class="tech-tag">Luau Strict</span>
-            <span class="tech-tag">TweenService</span>
-            <span class="tech-tag">OOP Modules</span>
-            <span class="tech-tag">ParticleVFX</span>
-          </div>
-        </div>
-      </article>
-
-      <!-- Project 3: Tower Defense System -->
-      <article class="project-card">
-        <div class="media-container iframe-wrapper">
-          <iframe 
-            src="https://www.youtube.com/embed/8xwSWrxZH60?enablejsapi=1" 
-            title="Tower Defense System" 
-            frameborder="0" 
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-            allowfullscreen>
-          </iframe>
-          <span class="card-tag">Strategy / AI Systems</span>
-        </div>
-        <div class="card-details">
-          <h3 class="card-title">Tower Defense Engine</h3>
-          <p class="card-desc">
-            Performant pathfinding and wave spawn architecture with unit placement grids, upgrade trees, target prioritization algorithms, and server-validated combat logic.
-          </p>
-          <div class="tech-stack">
-            <span class="tech-tag">Luau Strict</span>
-            <span class="tech-tag">Wave Handler</span>
-            <span class="tech-tag">Placement Grid</span>
-            <span class="tech-tag">Pathfinding</span>
-          </div>
-        </div>
-      </article>
-
-      <!-- Project 4: Vehicle System -->
-      <article class="project-card">
-        <div class="media-container iframe-wrapper">
-          <iframe 
-            src="https://www.youtube.com/embed/QmRCj5nLpF4?enablejsapi=1" 
-            title="Vehicle System" 
-            frameborder="0" 
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-            allowfullscreen>
-          </iframe>
-          <span class="card-tag">Vehicle Physics</span>
-        </div>
-        <div class="card-details">
-          <h3 class="card-title">Custom Vehicle Mechanics</h3>
-          <p class="card-desc">
-            Responsive vehicle physics system with custom suspension, drive logic, speed-scaling steering angles, dynamic camera tracking, and chassis physics tuning.
-          </p>
-          <div class="tech-stack">
-            <span class="tech-tag">Luau Strict</span>
-            <span class="tech-tag">Raycast Suspension</span>
-            <span class="tech-tag">Chassis Physics</span>
-            <span class="tech-tag">Camera Constraints</span>
-          </div>
-        </div>
-      </article>
-
-    </div>
-  </section>
-
-  <!-- Contact Section -->
-  <section id="contact" class="container">
-    <h2 class="section-heading">Get In Touch</h2>
-    <div class="contact-card">
-      <p class="contact-text">
-        Interested in working together or commissioning a custom mechanic? Reach out directly on Discord.
-      </p>
-
-      <!-- Sleek Discord Glass Card -->
-      <div class="discord-card">
-        <div class="discord-info">
-          <svg class="discord-icon" viewBox="0 0 24 24" fill="currentColor">
-            <path d="M20.317 4.37a19.791 19.791 0 0 0-4.885-1.515.074.074 0 0 0-.079.037c-.21.375-.444.864-.608 1.25a18.27 18.27 0 0 0-5.487 0 12.64 12.64 0 0 0-.617-1.25.077.077 0 0 0-.079-.037A19.736 19.736 0 0 0 3.677 4.37a.07.07 0 0 0-.032.027C.533 9.046-.32 13.58.099 18.057a.082.082 0 0 0 .031.057 19.9 19.9 0 0 0 5.993 3.03.078.078 0 0 0 .084-.028c.462-.63.874-1.295 1.226-1.994.021-.041.001-.09-.041-.106a13.107 13.107 0 0 1-1.872-.892.077.077 0 0 1-.008-.128 10.2 10.2 0 0 0 .372-.292.074.074 0 0 1 .077-.01c3.928 1.793 8.18 1.793 12.061 0a.074.074 0 0 1 .078.01c.12.098.246.198.373.292a.077.077 0 0 1-.006.127 12.299 12.299 0 0 1-1.873.892.077.077 0 0 0-.041.107c.36.698.772 1.362 1.225 1.993a.076.076 0 0 0 .084.028 19.839 19.839 0 0 0 6.002-3.03.077.077 0 0 0 .032-.054c.5-5.177-.838-9.674-3.549-13.66a.061.061 0 0 0-.031-.028zM8.02 15.33c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.956-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.956 2.418-2.157 2.418zm7.975 0c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.955-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.946 2.418-2.157 2.418z"/>
-          </svg>
-          <code id="discord-id">retropolis009</code>
-        </div>
-        <button id="copy-btn" class="btn btn-copy" onclick="copyDiscordID()">
-          <span id="copy-text">Copy ID</span>
-        </button>
+    <section id="systems" class="container">
+      <div class="section-intro">
+        <p class="eyebrow">Systems &amp; expertise</p>
+        <h2 class="section-heading">Gameplay, connected end to end.</h2>
+        <p class="section-copy">My current portfolio demonstrates these areas. Each project page can go deeper into the implementation and my specific contribution.</p>
       </div>
-    </div>
-  </section>
+      <div class="systems-grid">
+        <article class="system-card"><span class="system-number">01</span><h3>Combat &amp; abilities</h3><p>Weapon behavior, ability flows, cooldowns, hit feedback, and the UI that communicates game state.</p></article>
+        <article class="system-card"><span class="system-number">02</span><h3>AI &amp; progression</h3><p>Enemy movement, target selection, waves, placement, and upgrade paths for strategy gameplay.</p></article>
+        <article class="system-card"><span class="system-number">03</span><h3>Physics &amp; feel</h3><p>Vehicle suspension, steering response, camera behavior, recoil, and other mechanics players feel directly.</p></article>
+      </div>
+    </section>
 
-  <!-- Fixed Scroll Indicator -->
-  <div id="scroll-indicator" class="scroll-indicator">
-    <span class="scroll-text">SCROLL</span>
-    <div class="mouse-icon">
-      <div class="wheel"></div>
-    </div>
-  </div>
+    <section id="approach" class="container approach-section">
+      <div class="section-intro">
+        <p class="eyebrow">How I work</p>
+        <h2 class="section-heading">Make the work easy to trust.</h2>
+      </div>
+      <div class="approach-steps">
+        <article><span>01</span><div><h3>Understand the system</h3><p>Agree on player behavior, edge cases, and how the feature should fit the existing experience.</p></div></article>
+        <article><span>02</span><div><h3>Build in clear steps</h3><p>Break the feature into testable pieces and keep the client and server responsibilities clear where they apply.</p></div></article>
+        <article><span>03</span><div><h3>Integrate and refine</h3><p>Check the feature in context, tune its feel, and communicate what is complete and what needs follow-up.</p></div></article>
+      </div>
+    </section>
 
-  <footer>
-    <p>&copy; 2026 Roblox Scripting Portfolio • Hosted on GitHub Pages</p>
-  </footer>
+    <section id="about" class="container about-section">
+      <div class="section-intro">
+        <p class="eyebrow">About</p>
+        <h2 class="section-heading">A gameplay programmer focused on systems.</h2>
+      </div>
+      <div class="about-card">
+        <p>I’m Retropolis, a Roblox developer with around two years of experience building gameplay systems in Luau. My current work spans combat, abilities, tower-defense logic, and vehicle mechanics. I’m looking to contribute to a team over the long term and help build features that are clear to use and maintain.</p>
+      </div>
+    </section>
 
+    <section id="contact" class="container contact-section">
+      <div class="section-intro">
+        <p class="eyebrow">Contact</p>
+        <h2 class="section-heading">Building something in Roblox?</h2>
+        <p class="section-copy">Share what you’re making, the systems you need, and the kind of collaboration you have in mind.</p>
+      </div>
+      <div class="contact-card">
+        <div class="discord-card">
+          <div class="discord-info">
+            <svg class="discord-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.317 4.37a19.791 19.791 0 0 0-4.885-1.515.074.074 0 0 0-.079.037c-.21.375-.444.864-.608 1.25a18.27 18.27 0 0 0-5.487 0 12.64 12.64 0 0 0-.617-1.25.077.077 0 0 0-.079-.037A19.736 19.736 0 0 0 3.677 4.37a.07.07 0 0 0-.032.027C.533 9.046-.32 13.58.099 18.057a.082.082 0 0 0 .031.057 19.9 19.9 0 0 0 5.993 3.03.078.078 0 0 0 .084-.028c.462-.63.874-1.295 1.226-1.994.021-.041.001-.09-.041-.106a13.107 13.107 0 0 1-1.872-.892.077.077 0 0 1-.008-.128 10.2 10.2 0 0 0 .372-.292.074.074 0 0 1 .077-.01c3.928 1.793 8.18 1.793 12.061 0a.074.074 0 0 1 .078.01c.12.098.246.198.373.292a.077.077 0 0 1-.006.127 12.299 12.299 0 0 1-1.873.892.077.077 0 0 0-.041.107c.36.698.772 1.362 1.225 1.993a.076.076 0 0 0 .084.028 19.839 19.839 0 0 0 6.002-3.03.077.077 0 0 0 .032-.054c.5-5.177-.838-9.674-3.549-13.66a.061.061 0 0 0-.031-.028zM8.02 15.33c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.956-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.956 2.418-2.157 2.418zm7.975 0c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.955-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.946 2.418-2.157 2.418z"/></svg>
+            <div><span class="contact-label">Discord</span><code id="discord-id">retropolis009</code></div>
+          </div>
+          <button id="copy-btn" class="btn btn-copy" type="button" aria-label="Copy Discord username"><span id="copy-text">Copy username</span></button>
+        </div>
+        <p id="copy-status" class="copy-status" aria-live="polite"></p>
+        <p class="contact-small">When you reach out, please include your project, the system you need, and your timeline.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer><p>© <span id="current-year">2026</span> Retropolis · Roblox Gameplay &amp; Systems Programmer</p></footer>
   <script src="script.js"></script>
 </body>
 </html>
